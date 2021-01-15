@@ -1,0 +1,29 @@
+FROM strapi/base
+
+WORKDIR /strapi-app
+
+COPY ./package.json ./
+COPY ./yarn.lock ./
+
+RUN yarn install
+
+ENV DATABASE_CLIENT=postgres
+ENV DATABASE_NAME=bpm
+ENV DATABASE_HOST=127.0.0.1
+ENV DATABASE_PORT=5432
+ENV DATABASE_USERNAME=bpm
+ENV DATABASE_PASSWORD=root123
+ENV POSTGRES_INITDB_ROOT_USERNAME=bpm
+ENV POSTGRES_INITDB_ROOT_PASSWORD=root123
+
+COPY . .
+
+ENV NODE_ENV development
+
+RUN yarn build
+
+EXPOSE 1337
+
+CMD ["yarn", "start"]
+
+
