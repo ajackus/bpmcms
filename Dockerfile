@@ -15,6 +15,6 @@ RUN yarn build
 
 EXPOSE 1337
 
-ENTRYPOINT ["yarn", "start"]
+ENTRYPOINT ["yarn", "develop"]
 
 
