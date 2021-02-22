@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "chats",
   "info": {
-    "name": "chats"
+    "name": "chats",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -41,9 +42,6 @@
     "content_bangla": {
       "type": "richtext"
     },
-    "audio": {
-      "type": "string"
-    },
     "position": {
       "type": "integer"
     },
@@ -62,6 +60,26 @@
     "show_profile": {
       "type": "boolean",
       "default": false
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
