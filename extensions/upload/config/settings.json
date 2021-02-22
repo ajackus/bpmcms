@@ -1,11 +1,11 @@
 {
   "provider": "aws-s3",
   "providerOptions": {
-    "accessKeyId": "AKIA2FR35WYUA6XUJJNN",
-    "secretAccessKey": "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",
-    "region": "ap-south-1",
+    "accessKeyId": "${process.env.AWS_ACCESS_KEY_ID}",
+    "secretAccessKey": "${process.env.AWS_ACCESS_SECRET}",
+    "region": "${process.env.AWS_REGION}",
     "params": {
-      "Bucket": "bpmcms-dev-images"
+      "Bucket": "${process.env.AWS_BUCKET}"
     }
   }
 }
