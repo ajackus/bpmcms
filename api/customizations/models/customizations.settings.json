@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customizations",
+  "info": {
+    "name": "customizations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "achievement_id": {
+      "type": "integer"
+    },
+    "avatar_id": {
+      "type": "integer"
+    }
+  }
+}
