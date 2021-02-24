@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "games",
   "info": {
-    "name": "games"
+    "name": "games",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,9 +22,6 @@
         "QUIZ1216E"
       ]
     },
-    "player_id": {
-      "type": "integer"
-    },
     "event_type": {
       "type": "string"
     },
@@ -41,6 +39,11 @@
     },
     "achievements_id": {
       "type": "integer"
+    },
+    "player_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "games_fkey"
     }
   }
 }

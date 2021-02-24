@@ -61,6 +61,18 @@
     },
     "mobile_no": {
       "type": "string"
+    },
+    "avatar_fkey": {
+      "via": "player_id",
+      "collection": "avatars"
+    },
+    "games_fkey": {
+      "via": "player_id",
+      "collection": "games"
+    },
+    "progresses_fkey": {
+      "via": "player_id",
+      "collection": "progress"
     }
   }
 }

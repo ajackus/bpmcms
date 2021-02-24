@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "player_id": {
-      "type": "integer"
-    },
     "gender": {
       "type": "string"
     },
@@ -37,6 +34,15 @@
     },
     "show": {
       "type": "boolean"
+    },
+    "player_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "avatar_fkey"
+    },
+    "progress_id": {
+      "via": "avatar_fkey",
+      "collection": "progress"
     }
   }
 }
