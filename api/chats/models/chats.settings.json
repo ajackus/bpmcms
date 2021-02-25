@@ -80,6 +80,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "final": {
+      "type": "boolean"
     }
   }
 }
