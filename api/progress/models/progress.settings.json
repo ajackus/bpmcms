@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "progresses",
+  "info": {
+    "name": "progress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "chapter_name": {
+      "type": "string"
+    },
+    "chapter_id": {
+      "type": "biginteger"
+    },
+    "position": {
+      "type": "biginteger"
+    },
+    "container_id": {
+      "type": "biginteger"
+    },
+    "avatar_fkey": {
+      "model": "avatars",
+      "via": "progress_id"
+    },
+    "player_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "progresses_fkey"
+    }
+  }
+}

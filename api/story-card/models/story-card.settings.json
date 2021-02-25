@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "story_cards",
+  "info": {
+    "name": "story_card"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "chapter_id": {
+      "type": "integer"
+    },
+    "bg_color": {
+      "type": "string"
+    },
+    "border_color": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "subject": {
+      "type": "enumeration",
+      "enum": [
+        "ENVIRONMENT",
+        "HEALTH",
+        "EDUCATION",
+        "CONNECTIVITY"
+      ]
+    },
+    "Age": {
+      "type": "enumeration",
+      "enum": [
+        "AGE69",
+        "AGE912",
+        "AGE1216"
+      ]
+    }
+  }
+}
