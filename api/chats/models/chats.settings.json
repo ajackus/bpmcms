@@ -83,6 +83,15 @@
     },
     "final": {
       "type": "boolean"
+    },
+    "images_bangla": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
