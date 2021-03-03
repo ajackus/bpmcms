@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "static_contents",
+  "info": {
+    "name": "static_contents"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "en": {
+      "type": "richtext"
+    },
+    "bn": {
+      "type": "richtext"
+    },
+    "sign_up": {
+      "type": "boolean"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "page": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chats",
+  "info": {
+    "name": "chats",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "chapter_id": {
+      "type": "integer"
+    },
+    "container_id": {
+      "type": "integer"
+    },
+    "correct": {
+      "type": "boolean"
+    },
+    "chat_type": {
+      "type": "enumeration",
+      "enum": [
+        "TEXT",
+        "GAME",
+        "IMAGE",
+        "SLIDER"
+      ]
+    },
+    "user_type": {
+      "type": "enumeration",
+      "enum": [
+        "ADMIN",
+        "USER"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "content_bangla": {
+      "type": "richtext"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content_en": {
+      "type": "richtext"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_bangla": {
+      "type": "string"
+    },
+    "show_profile": {
+      "type": "boolean",
+      "default": false
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "final": {
+      "type": "boolean"
+    },
+    "images_bangla": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "demos",
+  "info": {
+    "name": "demos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "chapter_id": {
+      "type": "integer"
+    },
+    "container_id": {
+      "type": "integer"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "Chat_Type": {
+      "type": "enumeration",
+      "enum": [
+        "TEXT",
+        "IMAGE",
+        "GAME",
+        "SLIDER"
+      ]
+    },
+    "User_Type": {
+      "type": "enumeration",
+      "enum": [
+        "ADMIN",
+        "USER"
+      ]
+    },
+    "Correct": {
+      "type": "boolean"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Content_bangla": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "title_bangla": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "Content_en": {
+      "type": "richtext"
+    }
+  }
+}
