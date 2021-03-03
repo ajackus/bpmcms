@@ -33,6 +33,8 @@
       "type": "enumeration",
       "enum": [
         "ADMIN",
+        "ADMIN2",
+        "ADMIN3",
         "USER"
       ]
     },
