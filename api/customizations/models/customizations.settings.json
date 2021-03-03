@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "customizations",
   "info": {
-    "name": "customizations"
+    "name": "customizations",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,6 +19,15 @@
     },
     "avatar_id": {
       "type": "integer"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
