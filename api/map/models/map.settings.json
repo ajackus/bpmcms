@@ -73,6 +73,15 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "division_map": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
