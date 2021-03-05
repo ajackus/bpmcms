@@ -82,6 +82,12 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "copyright_en": {
+      "type": "richtext"
+    },
+    "copyright_bn": {
+      "type": "richtext"
     }
   }
 }
