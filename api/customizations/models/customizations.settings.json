@@ -28,6 +28,21 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "Age": {
+      "type": "enumeration",
+      "enum": [
+        "Junior",
+        "Mid",
+        "Senior"
+      ]
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Boy",
+        "Girl"
+      ]
     }
   }
 }
