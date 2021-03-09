@@ -59,6 +59,9 @@
         "Education",
         "Connectivity"
       ]
+    },
+    "website_bn": {
+      "type": "richtext"
     }
   }
 }
