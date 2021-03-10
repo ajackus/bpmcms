@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "progresses",
   "info": {
-    "name": "progress"
+    "name": "progress",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -33,6 +34,38 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "progresses_fkey"
+    },
+    "game_id": {
+      "type": "enumeration",
+      "enum": [
+        "ADV69E",
+        "ADV912E",
+        "ADV1216C",
+        "QUIZ69C",
+        "QUIZ912H",
+        "QUIZ1216E"
+      ]
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "event_value": {
+      "type": "string"
+    },
+    "max_step": {
+      "type": "integer"
+    },
+    "max_object": {
+      "type": "integer"
+    },
+    "max_info": {
+      "type": "integer"
+    },
+    "max_part": {
+      "type": "integer"
+    },
+    "max_photo": {
+      "type": "integer"
     }
   }
 }
