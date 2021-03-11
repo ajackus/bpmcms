@@ -62,6 +62,9 @@
     },
     "website_bn": {
       "type": "richtext"
+    },
+    "story_name": {
+      "type": "string"
     }
   }
 }
