@@ -41,9 +41,9 @@
       "type": "integer"
     },
     "player_id": {
+      "via": "games_fkey",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "games_fkey"
+      "model": "user"
     }
   }
 }

@@ -36,9 +36,9 @@
       "type": "boolean"
     },
     "player_id": {
+      "via": "avatar_fkey",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "avatar_fkey"
+      "model": "user"
     },
     "progress_id": {
       "via": "avatar_fkey",

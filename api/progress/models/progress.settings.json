@@ -31,9 +31,9 @@
       "via": "progress_id"
     },
     "player_id": {
+      "via": "progresses_fkey",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "progresses_fkey"
+      "model": "user"
     },
     "game_id": {
       "type": "enumeration",

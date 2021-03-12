@@ -63,16 +63,19 @@
       "type": "string"
     },
     "avatar_fkey": {
-      "via": "player_id",
-      "collection": "avatars"
+      "collection": "avatars",
+      "via": "player_id"
     },
     "games_fkey": {
-      "via": "player_id",
-      "collection": "games"
+      "collection": "games",
+      "via": "player_id"
     },
     "progresses_fkey": {
-      "via": "player_id",
-      "collection": "progress"
+      "collection": "progress",
+      "via": "player_id"
+    },
+    "nickname": {
+      "type": "string"
     }
   }
 }
