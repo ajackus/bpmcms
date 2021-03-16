@@ -88,6 +88,9 @@
     },
     "copyright_bn": {
       "type": "richtext"
+    },
+    "position": {
+      "type": "integer"
     }
   }
 }
