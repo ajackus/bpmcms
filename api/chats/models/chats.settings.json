@@ -106,6 +106,13 @@
     },
     "audio_sec": {
       "type": "integer"
+    },
+    "image_position": {
+      "type": "enumeration",
+      "enum": [
+        "LEFT",
+        "CENTER"
+      ]
     }
   }
 }
