@@ -31,9 +31,9 @@
       "via": "progress_id"
     },
     "player_id": {
-      "via": "progresses_fkey",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "progresses_fkey"
     },
     "game_id": {
       "type": "enumeration",
@@ -43,7 +43,19 @@
         "ADV1216C",
         "QUIZ69C",
         "QUIZ912H",
-        "QUIZ1216E"
+        "QUIZ1216E",
+        "STO69EN",
+        "STO69ED",
+        "STO69HE",
+        "STO69CO",
+        "STO912EN",
+        "STO912ED",
+        "STO912HE",
+        "STO912CO",
+        "STO1216EN",
+        "STO1216ED",
+        "STO1216HE",
+        "STO1216CO"
       ]
     },
     "event_type": {
