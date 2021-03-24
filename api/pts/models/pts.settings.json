@@ -25,7 +25,8 @@
         "health",
         "environment",
         "fon",
-        "main"
+        "main",
+        "mlp_map"
       ]
     },
     "content_en": {
