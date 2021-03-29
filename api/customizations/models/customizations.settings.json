@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customizations",
+  "info": {
+    "name": "customizations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "achievement_id": {
+      "type": "integer"
+    },
+    "avatar_id": {
+      "type": "integer"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Age": {
+      "type": "enumeration",
+      "enum": [
+        "Junior",
+        "Mid",
+        "Senior"
+      ]
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Boy",
+        "Girl"
+      ]
+    },
+    "icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

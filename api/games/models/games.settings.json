@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "games",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "game_id": {
+      "type": "enumeration",
+      "enum": [
+        "ADV69E",
+        "ADV912E",
+        "ADV1216C",
+        "QUIZ69C",
+        "QUIZ912H",
+        "QUIZ1216E"
+      ]
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "event_value": {
+      "type": "integer"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "datetime"
+    },
+    "score": {
+      "type": "decimal"
+    },
+    "achievements_id": {
+      "type": "integer"
+    },
+    "player_id": {
+      "via": "games_fkey",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

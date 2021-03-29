@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maps",
+  "info": {
+    "name": "map",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "location_en": {
+      "type": "string"
+    },
+    "location_bn": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image_title_en": {
+      "type": "string"
+    },
+    "image_title_bn": {
+      "type": "string"
+    },
+    "image_description_en": {
+      "type": "richtext"
+    },
+    "image_description_bn": {
+      "type": "richtext"
+    },
+    "audio_bn": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Divisions": {
+      "type": "enumeration",
+      "enum": [
+        "Dhaka",
+        "Barishal",
+        "Chattogram",
+        "Khulna",
+        "Mymensingh",
+        "Rajshahi",
+        "Rangpur",
+        "Sylhet"
+      ]
+    },
+    "audio_en": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "division_map": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "copyright_en": {
+      "type": "richtext"
+    },
+    "copyright_bn": {
+      "type": "richtext"
+    },
+    "position": {
+      "type": "integer"
+    }
+  }
+}

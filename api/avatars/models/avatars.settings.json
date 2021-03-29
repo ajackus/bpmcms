@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avatars",
+  "info": {
+    "name": "avatars",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "gender": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "environment_progress": {
+      "type": "integer"
+    },
+    "connectivity_progress": {
+      "type": "integer"
+    },
+    "health_progress": {
+      "type": "integer"
+    },
+    "education_progress": {
+      "type": "integer"
+    },
+    "show": {
+      "type": "boolean"
+    },
+    "player_id": {
+      "via": "avatar_fkey",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "progress_id": {
+      "via": "avatar_fkey",
+      "collection": "progress"
+    }
+  }
+}

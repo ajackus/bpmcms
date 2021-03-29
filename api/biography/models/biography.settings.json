@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "biographies",
+  "info": {
+    "name": "biography"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "title_bn": {
+      "type": "string"
+    },
+    "description_en": {
+      "type": "richtext"
+    },
+    "description_bn": {
+      "type": "richtext"
+    },
+    "copyright_en": {
+      "type": "string"
+    },
+    "copyright_bn": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    }
+  }
+}

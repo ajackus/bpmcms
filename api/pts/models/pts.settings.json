@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pts",
+  "info": {
+    "name": "pts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "chapter_id": {
+      "type": "integer"
+    },
+    "page": {
+      "type": "enumeration",
+      "enum": [
+        "map",
+        "story",
+        "pm",
+        "education",
+        "connectivity",
+        "health",
+        "environment",
+        "fon",
+        "main"
+      ]
+    },
+    "content_en": {
+      "type": "richtext"
+    },
+    "content_bn": {
+      "type": "richtext"
+    },
+    "age": {
+      "type": "enumeration",
+      "enum": [
+        "junior",
+        "mid",
+        "senior"
+      ]
+    },
+    "website": {
+      "type": "richtext"
+    },
+    "title_en": {
+      "type": "richtext"
+    },
+    "title_bn": {
+      "type": "richtext"
+    },
+    "subject": {
+      "type": "enumeration",
+      "enum": [
+        "Environment",
+        "Health",
+        "Education",
+        "Connectivity"
+      ]
+    },
+    "website_bn": {
+      "type": "richtext"
+    },
+    "story_name": {
+      "type": "string"
+    }
+  }
+}
