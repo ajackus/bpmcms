@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "chapter_cards",
   "info": {
-    "name": "chapter_cards"
+    "name": "chapter_cards",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,6 +31,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "chapter_id": {
+      "type": "integer"
     }
   }
 }
