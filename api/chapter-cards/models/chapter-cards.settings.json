@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapter_cards",
+  "info": {
+    "name": "chapter_cards"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_bn": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "border": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
