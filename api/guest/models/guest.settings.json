@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guests",
+  "info": {
+    "name": "guest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "gender": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "environment_progress": {
+      "type": "integer"
+    },
+    "connectivity_progress": {
+      "type": "integer"
+    },
+    "health_progress": {
+      "type": "integer"
+    },
+    "education_progress": {
+      "type": "integer"
+    },
+    "unique_identifier": {
+      "type": "uid"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "chapter_name": {
+      "type": "string"
+    },
+    "chapter_id": {
+      "type": "biginteger"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "container_id": {
+      "type": "integer"
+    },
+    "game_id": {
+      "type": "enumeration",
+      "enum": [
+        "ADV69E",
+        "ADV912E",
+        "ADV1216C",
+        "QUIZ69C",
+        "QUIZ912H",
+        "QUIZ1216E",
+        "STO69EN",
+        "STO69ED",
+        "STO69HE",
+        "STO69CO",
+        "STO912EN",
+        "STO912ED",
+        "STO912HE",
+        "STO912CO",
+        "STO1216EN",
+        "STO1216ED",
+        "STO1216HE",
+        "STO1216CO"
+      ]
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "event_value": {
+      "type": "string"
+    },
+    "max_step": {
+      "type": "integer"
+    },
+    "max_object": {
+      "type": "integer"
+    },
+    "max_info": {
+      "type": "integer"
+    },
+    "max_part": {
+      "type": "integer"
+    },
+    "max_photo": {
+      "type": "integer"
+    }
+  }
+}
