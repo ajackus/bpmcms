@@ -79,6 +79,9 @@
     },
     "UID": {
       "type": "uid"
+    },
+    "dob": {
+      "type": "datetime"
     }
   }
 }
