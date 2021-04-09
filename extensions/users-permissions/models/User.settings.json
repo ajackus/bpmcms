@@ -81,7 +81,7 @@
       "type": "uid"
     },
     "dob": {
-      "type": "datetime"
+      "type": "date"
     }
   }
 }
