@@ -76,6 +76,9 @@
     },
     "nickname": {
       "type": "string"
+    },
+    "UID": {
+      "type": "uid"
     }
   }
 }
