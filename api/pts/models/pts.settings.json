@@ -64,7 +64,10 @@
     "website_bn": {
       "type": "richtext"
     },
-    "story_name": {
+    "story_name_en": {
+      "type": "string"
+    },
+    "story_name_bn": {
       "type": "string"
     }
   }
