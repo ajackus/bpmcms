@@ -36,13 +36,18 @@
       "type": "boolean"
     },
     "player_id": {
-      "via": "avatar_fkey",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "avatar_fkey"
     },
     "progress_id": {
-      "via": "avatar_fkey",
-      "collection": "progress"
+      "collection": "progress",
+      "via": "avatar_fkey"
+    },
+    "customizations": {
+      "collection": "customizations",
+      "via": "avatars",
+      "dominant": true
     }
   }
 }
