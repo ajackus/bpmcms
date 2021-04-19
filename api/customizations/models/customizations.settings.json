@@ -54,8 +54,11 @@
       "required": false
     },
     "avatars": {
-      "via": "customizations",
-      "collection": "avatars"
+      "collection": "avatars",
+      "via": "customizations"
+    },
+    "subject": {
+      "type": "string"
     }
   }
 }
