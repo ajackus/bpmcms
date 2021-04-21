@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/guest-progresses",
+      "handler": "guest-progress.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guest-progresses/count",
+      "handler": "guest-progress.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guest-progresses/:id",
+      "handler": "guest-progress.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/guest-progresses",
+      "handler": "guest-progress.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/guest-progresses/:id",
+      "handler": "guest-progress.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/guest-progresses/:id",
+      "handler": "guest-progress.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
