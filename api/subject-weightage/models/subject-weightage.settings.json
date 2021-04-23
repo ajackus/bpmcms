@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subject_weightages",
+  "info": {
+    "name": "subject_weightage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "max_chapter": {
+      "type": "integer"
+    }
+  }
+}

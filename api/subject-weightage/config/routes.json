@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subject-weightages",
+      "handler": "subject-weightage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subject-weightages/count",
+      "handler": "subject-weightage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subject-weightages/:id",
+      "handler": "subject-weightage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subject-weightages",
+      "handler": "subject-weightage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subject-weightages/:id",
+      "handler": "subject-weightage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subject-weightages/:id",
+      "handler": "subject-weightage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
