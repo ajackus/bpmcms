@@ -48,6 +48,20 @@
       "collection": "customizations",
       "via": "avatars",
       "dominant": true
+    },
+    "custom_avatar": {
+      "type": "json"
+    },
+    "custom_avatar_icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
