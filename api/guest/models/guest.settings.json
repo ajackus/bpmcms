@@ -93,6 +93,25 @@
     },
     "max_photo": {
       "type": "integer"
+    },
+    "customizations": {
+      "collection": "customizations",
+      "via": "guests",
+      "dominant": true
+    },
+    "custom_avatar": {
+      "type": "json"
+    },
+    "custom_avatar_icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

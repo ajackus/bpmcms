@@ -59,6 +59,10 @@
     },
     "subject": {
       "type": "string"
+    },
+    "guests": {
+      "via": "customizations",
+      "collection": "guest"
     }
   }
 }
