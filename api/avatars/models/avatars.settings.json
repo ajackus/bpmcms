@@ -14,7 +14,7 @@
     "gender": {
       "type": "string"
     },
-    "nickname": {
+    "username": {
       "type": "string"
     },
     "age": {
