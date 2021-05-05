@@ -48,6 +48,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "is_game": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
