@@ -52,6 +52,9 @@
     "is_game": {
       "type": "boolean",
       "default": false
+    },
+    "subject": {
+      "type": "string"
     }
   }
 }
