@@ -78,6 +78,9 @@
     },
     "max_photo": {
       "type": "integer"
+    },
+    "max_value": {
+      "type": "integer"
     }
   }
 }

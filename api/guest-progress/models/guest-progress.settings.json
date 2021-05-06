@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "guest_progresses",
   "info": {
-    "name": "guest_progress"
+    "name": "guest_progress",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -71,6 +72,9 @@
     },
     "unique_identifier": {
       "type": "string"
+    },
+    "max_value": {
+      "type": "integer"
     }
   }
 }
