@@ -61,8 +61,11 @@
       "type": "string"
     },
     "guests": {
-      "via": "customizations",
-      "collection": "guest"
+      "collection": "guest",
+      "via": "customizations"
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }
